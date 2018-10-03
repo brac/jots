@@ -2,7 +2,7 @@ $font-stack: 'Montserrat', sans-serif;
 $background-color: #282c34;
 
 main {
-  font: 100% $font-stack;
+  font:  $font-stack;
 }
 
 .App-logo {
@@ -24,6 +24,25 @@ main {
 
 .App-link {
   color: #61dafb;
+}
+
+.jot {
+  .jot-title{
+    font-weight: 200;
+    color: black;
+    padding: 0 0 0 3px;
+    background-color: #c27e18;
+  }
+  ul {
+    padding: 0 0 0 7px;
+    list-style: none;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 13px;
+  }
 }
 
 @keyframes App-logo-spin {

@@ -1,5 +1,5 @@
 main {
-  font: 100% "Montserrat", sans-serif;
+  font: "Montserrat", sans-serif;
 }
 
 .App-logo {
@@ -21,6 +21,23 @@ main {
 
 .App-link {
   color: #61dafb;
+}
+
+.jot .jot-title {
+  font-weight: 200;
+  color: black;
+  padding: 0 0 0 3px;
+  background-color: #c27e18;
+}
+.jot ul {
+  padding: 0 0 0 7px;
+  list-style: none;
+}
+.jot h4 {
+  font-size: 15px;
+}
+.jot p {
+  font-size: 13px;
 }
 
 @keyframes App-logo-spin {
