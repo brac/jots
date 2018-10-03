@@ -1,3 +1,10 @@
+$font-stack: 'Montserrat', sans-serif;
+$background-color: #282c34;
+
+main {
+  font: 100% $font-stack;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -5,7 +12,7 @@
 
 .App{
   /*text-align: center;*/
-  background-color: #282c34;
+  background-color: $background-color;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

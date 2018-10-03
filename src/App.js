@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button } from 'reactstrap';
+import Jot from './components/Jot';
+// import { Button } from 'reactstrap';
 
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {date: new Date()};
+    this.state = {
+      date: new Date(),
+      jotInfo: {
+        message: 'I am jot info',
+      }
+    };
   }
 
   render() {
@@ -18,11 +24,44 @@ class App extends Component {
           I am the header
         </header>
 
-        <body>
-          <Jot
-            time={this.state.date.toLocaleTimeString()}
-          />
-        </body>
+        <main className="container" >
+          <div className="row">
+            <div className="col-md">
+              <Jot
+
+              />
+              <Jot
+
+              />
+              <Jot
+
+              />
+              <Jot
+
+              />
+            </div>
+            <div className="col-md">
+              <Jot
+
+              />
+              <Jot
+
+              />
+            </div>
+            <div className="col-md">
+              <Jot
+
+              />
+              <Jot
+
+              />
+              <Jot
+
+              />
+            </div>
+          </div>
+
+        </main>
 
         <footer>
           <p>
@@ -33,18 +72,6 @@ class App extends Component {
     );
     //jshint ignore:end
   }
-}
-
-function Jot(props) {
-
-  //jshint ignore:start
-  return (
-    <div>
-      <h1> Hello There</h1>
-      <h2>It is {props.time}</h2>
-    </div>
-  );
-  //jshint ignore:end
 }
 
 export default App;
