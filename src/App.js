@@ -8,10 +8,15 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      date: new Date(),
-      jotInfo: {
-        message: 'I am jot info',
-      }
+      jots: [
+        {
+          topic: 'Install Git',
+          data: [
+            'Install git on macOS with Homebrew',
+            '$ brew install git'
+          ]
+        }
+      ]
     };
   }
 
@@ -21,20 +26,56 @@ class App extends Component {
       <div className="App">
 
         <header>
-          I am the header
+          A Git Cheat Sheet
         </header>
 
         <main className="container-fluid">
           <div className="jot-board row">
-            <Jot/>
-            <Jot/>
-            <Jot/>
-            <Jot/>
-            <Jot/>
-            <Jot/>
-            <Jot/>
-            <Jot/>
-            <Jot/>
+            <Jot
+              topic={this.state.jots[0].topic}
+              description={this.state.jots[0].data[0]}
+              command={this.state.jots[0].data[1]}
+            />
+            <Jot
+              topic={this.state.jots[0].topic}
+              description={this.state.jots[0].data[0]}
+              command={this.state.jots[0].data[1]}
+            />
+            <Jot
+              topic={this.state.jots[0].topic}
+              description={this.state.jots[0].data[0]}
+              command={this.state.jots[0].data[1]}
+            />
+            <Jot
+              topic={this.state.jots[0].topic}
+              description={this.state.jots[0].data[0]}
+              command={this.state.jots[0].data[1]}
+            />
+            <Jot
+              topic={this.state.jots[0].topic}
+              description={this.state.jots[0].data[0]}
+              command={this.state.jots[0].data[1]}
+            />
+            <Jot
+              topic={this.state.jots[0].topic}
+              description={this.state.jots[0].data[0]}
+              command={this.state.jots[0].data[1]}
+            />
+            <Jot
+              topic={this.state.jots[0].topic}
+              description={this.state.jots[0].data[0]}
+              command={this.state.jots[0].data[1]}
+            />
+            <Jot
+              topic={this.state.jots[0].topic}
+              description={this.state.jots[0].data[0]}
+              command={this.state.jots[0].data[1]}
+            />
+            <Jot
+              topic={this.state.jots[0].topic}
+              description={this.state.jots[0].data[0]}
+              command={this.state.jots[0].data[1]}
+            />
           </div>
         </main>
 
