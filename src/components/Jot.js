@@ -3,7 +3,7 @@ import React from 'react';
 function Jot(props) {
   //jshint ignore:start
   return (
-    <div className="jot border border-secondary m-1">
+    <div className="jot border border-secondary ">
       <h4 className="jot-title">INSTALL GIT</h4>
         <ul>
           <li>

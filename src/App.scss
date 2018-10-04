@@ -26,12 +26,20 @@ main {
   color: #61dafb;
 }
 
+.jot-board {
+  justify-content: center;
+}
+
 .jot {
+  margin-top: 4px;
+  margin-right: 4px;
+
   .jot-title{
     font-weight: 200;
     color: black;
     padding: 0 0 0 3px;
     background-color: #c27e18;
+
   }
   ul {
     padding: 0 0 0 7px;

@@ -24,25 +24,18 @@ class App extends Component {
           I am the header
         </header>
 
-        <main className="container-fluid pl-5 pr-5">
-          <div className="row">
-            <div className="col-md">
-              <Jot/>
-              <Jot/>
-              <Jot/>
-              <Jot/>
-            </div>
-            <div className="col-md">
-              <Jot/>
-              <Jot/>
-            </div>
-            <div className="col-md">
-              <Jot/>
-              <Jot/>
-              <Jot/>
-            </div>
+        <main className="container-fluid">
+          <div className="jot-board row">
+            <Jot/>
+            <Jot/>
+            <Jot/>
+            <Jot/>
+            <Jot/>
+            <Jot/>
+            <Jot/>
+            <Jot/>
+            <Jot/>
           </div>
-
         </main>
 
         <footer>

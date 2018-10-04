@@ -23,6 +23,14 @@ main {
   color: #61dafb;
 }
 
+.jot-board {
+  justify-content: center;
+}
+
+.jot {
+  margin-top: 4px;
+  margin-right: 4px;
+}
 .jot .jot-title {
   font-weight: 200;
   color: black;
