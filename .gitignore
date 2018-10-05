@@ -16,8 +16,5 @@
 .env.test.local
 .env.production.local
 .jshintrc
-NOTES.md
-
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+NOTES.md

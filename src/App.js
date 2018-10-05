@@ -13,17 +13,114 @@ class App extends Component {
           topic: 'Install Git',
           id: 1,
           data: [
-            'Install git on macOS with Homebrew',
-            '$ brew install git'
-          ]
+            [
+              'Install git on macOS with Homebrew',
+              '$ brew install git'
+            ],
+            [
+              'Install git on Debian-based linux',
+              '$ sudo apt-get install git'
+            ],
+            [
+              'Install git on Windows with CHocolatey',
+              '$ choco install git'
+            ],
+          ],
         },
         {
           topic: 'CONFIGURATION',
           id: 2,
           data: [
-            'Sets the name you want attached to your commit transaction',
-            '$ git config --global user.name [name]'
-          ]
+            [
+              'Sets the name you want attached to your commit transaction',
+              '$ git config --global user.name [name]'
+            ],
+            [
+              'Sets the email you want atached to your commit transactions',
+              '$ git config --global user.email [email address]'
+            ],
+            [
+              'Enables helpful colorization of command line output',
+              '$ git config --global user.ui auto'
+            ]
+          ],
+
+        },
+        {
+          topic: 'CREATE REPOSITORIES',
+          id: 3,
+          data: [
+            [
+              'Creates a new local repository with the specified name',
+              '$ git init [project-name]'
+            ],
+            [
+              'Downloads a project and its entire version history',
+              '$ git clone [url]'
+            ]
+          ],
+        },
+        {
+          topic: 'MAKE CHANGES',
+          id: 4,
+          data: [
+            [
+              'Lists all new or omdified files to be commited',
+              '$ git status'
+            ],
+            [
+              'Shows file differences not yet staged',
+              '$ git diff'
+            ],
+            [
+              'Add the specified file to the staging area',
+              '$ git add [file]'
+            ],
+            [
+              'Shows file differences between staging and the last file version',
+              '$ git add --staged'
+            ],
+            [
+              'Unstages the file, but preserve its contents',
+              '$ git reset [file]'
+            ],
+            [
+              'Records staged snapshots in version history',
+              '$ git commit -m [descriptive message]'
+            ]
+          ],
+
+        },
+        {
+          topic: 'BRANCES',
+          id: 5,
+          data: [
+            [
+              'Lists all local branches in the current repository',
+              '$ git branch'
+            ],
+            [
+              'Creates a branch',
+              '$ git branch [branch-name]'
+            ],
+            [
+              'Add the specified file to the staging area',
+              '$ git add [file]'
+            ],
+            [
+              'Shows file differences between staging and the last file version',
+              '$ git add --staged'
+            ],
+            [
+              'Unstages the file, but preserve its contents',
+              '$ git reset [file]'
+            ],
+            [
+              'Records staged snapshots in version history',
+              '$ git commit -m [descriptive message]'
+            ]
+          ],
+
         }
       ]
     };

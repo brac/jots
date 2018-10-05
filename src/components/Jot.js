@@ -2,17 +2,18 @@ import React from 'react';
 
 function Jot(props) {
   const {data} = props
-
   //jshint ignore:start
   return (
     <div className="jot border border-secondary ">
       <h4 className="jot-title">{props.topic}</h4>
         <ul>
           { data.map( data => {
+            const description = data[0]
+            const command = data[1]
             return (
-              <li key="1">
-                <h4>{data}</h4>
-                <p>{data}</p>
+              <li key={data.id}>
+                <h4>{description}</h4>
+                <p>{command}</p>
               </li>
             )
           })}
