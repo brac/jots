@@ -11,9 +11,18 @@ class App extends Component {
       jots: [
         {
           topic: 'Install Git',
+          id: 1,
           data: [
             'Install git on macOS with Homebrew',
             '$ brew install git'
+          ]
+        },
+        {
+          topic: 'CONFIGURATION',
+          id: 2,
+          data: [
+            'Sets the name you want attached to your commit transaction',
+            '$ git config --global user.name [name]'
           ]
         }
       ]
@@ -21,6 +30,7 @@ class App extends Component {
   }
 
   render() {
+    const {jots} = this.state;
     //jshint ignore:start
     return (
       <div className="App">
@@ -30,53 +40,24 @@ class App extends Component {
         </header>
 
         <main className="container-fluid">
-          <div className="jot-board row">
-            <Jot
-              topic={this.state.jots[0].topic}
-              description={this.state.jots[0].data[0]}
-              command={this.state.jots[0].data[1]}
-            />
-            <Jot
-              topic={this.state.jots[0].topic}
-              description={this.state.jots[0].data[0]}
-              command={this.state.jots[0].data[1]}
-            />
-            <Jot
-              topic={this.state.jots[0].topic}
-              description={this.state.jots[0].data[0]}
-              command={this.state.jots[0].data[1]}
-            />
-            <Jot
-              topic={this.state.jots[0].topic}
-              description={this.state.jots[0].data[0]}
-              command={this.state.jots[0].data[1]}
-            />
-            <Jot
-              topic={this.state.jots[0].topic}
-              description={this.state.jots[0].data[0]}
-              command={this.state.jots[0].data[1]}
-            />
-            <Jot
-              topic={this.state.jots[0].topic}
-              description={this.state.jots[0].data[0]}
-              command={this.state.jots[0].data[1]}
-            />
-            <Jot
-              topic={this.state.jots[0].topic}
-              description={this.state.jots[0].data[0]}
-              command={this.state.jots[0].data[1]}
-            />
-            <Jot
-              topic={this.state.jots[0].topic}
-              description={this.state.jots[0].data[0]}
-              command={this.state.jots[0].data[1]}
-            />
-            <Jot
-              topic={this.state.jots[0].topic}
-              description={this.state.jots[0].data[0]}
-              command={this.state.jots[0].data[1]}
-            />
-          </div>
+          <ul className="jot-board row">
+            {
+              jots.map(jot => {
+                return (
+                  <li key="{jot.id}" className="jot-listitem">
+                    <Jot
+                      topic={jot.topic}
+                      description={jot.data[0]}
+                      command={jot.data[1]}
+                      data={jot.data}
+                    />
+                  </li>
+                )
+              })
+            }
+
+
+          </ul>
         </main>
 
         <footer>
