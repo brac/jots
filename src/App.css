@@ -34,6 +34,7 @@ main {
 .jot {
   margin-top: 4px;
   margin-right: 4px;
+  width: 400px;
 }
 .jot .jot-title {
   font-weight: 200;

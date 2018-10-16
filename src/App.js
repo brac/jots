@@ -44,7 +44,6 @@ class App extends Component {
               '$ git config --global user.ui auto'
             ]
           ],
-
         },
         {
           topic: 'CREATE REPOSITORIES',
