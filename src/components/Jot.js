@@ -8,10 +8,11 @@ function Jot(props) {
       <h4 className="jot-title">{props.topic}</h4>
         <ul>
           { data.map( data => {
+            const id = data.id
             const description = data[0]
             const command = data[1]
             return (
-              <li key={data.id}>
+              <li key={id}>
                 <h4>{description}</h4>
                 <p>{command}</p>
               </li>
